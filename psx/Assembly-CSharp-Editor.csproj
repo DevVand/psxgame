@@ -261,10 +261,10 @@
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="ICSharpCode.NRefactory">
-      <HintPath>B:/Github/Unity/projects/psx/Library/PackageCache/com.unity.render-pipelines.core@7.5.2/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
+      <HintPath>B:/Github/Unity/projects/psxgame/psx/Library/PackageCache/com.unity.render-pipelines.core@7.5.2/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-      <HintPath>B:/Github/Unity/projects/psx/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
+      <HintPath>B:/Github/Unity/projects/psxgame/psx/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>A:/Unity/2019.4.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -621,70 +621,70 @@
       <HintPath>A:/Unity/2019.4.19f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.TestRunner">
-      <HintPath>B:/Github/Unity/projects/psx/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+      <HintPath>B:/Github/Unity/projects/psxgame/psx/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TestRunner">
-      <HintPath>B:/Github/Unity/projects/psx/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+      <HintPath>B:/Github/Unity/projects/psxgame/psx/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
-      <HintPath>B:/Github/Unity/projects/psx/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+      <HintPath>B:/Github/Unity/projects/psxgame/psx/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>B:/Github/Unity/projects/psx/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>B:/Github/Unity/projects/psxgame/psx/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Shaders">
-      <HintPath>B:/Github/Unity/projects/psx/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+      <HintPath>B:/Github/Unity/projects/psxgame/psx/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>B:/Github/Unity/projects/psx/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>B:/Github/Unity/projects/psxgame/psx/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor">
-      <HintPath>B:/Github/Unity/projects/psx/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
+      <HintPath>B:/Github/Unity/projects/psxgame/psx/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Runtime">
-      <HintPath>B:/Github/Unity/projects/psx/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+      <HintPath>B:/Github/Unity/projects/psxgame/psx/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>B:/Github/Unity/projects/psx/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>B:/Github/Unity/projects/psxgame/psx/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Runtime">
-      <HintPath>B:/Github/Unity/projects/psx/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+      <HintPath>B:/Github/Unity/projects/psxgame/psx/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Editor">
-      <HintPath>B:/Github/Unity/projects/psx/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+      <HintPath>B:/Github/Unity/projects/psxgame/psx/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>B:/Github/Unity/projects/psx/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>B:/Github/Unity/projects/psxgame/psx/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>B:/Github/Unity/projects/psx/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>B:/Github/Unity/projects/psxgame/psx/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>B:/Github/Unity/projects/psx/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>B:/Github/Unity/projects/psxgame/psx/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Editor">
-      <HintPath>B:/Github/Unity/projects/psx/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+      <HintPath>B:/Github/Unity/projects/psxgame/psx/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>B:/Github/Unity/projects/psx/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>B:/Github/Unity/projects/psxgame/psx/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-      <HintPath>B:/Github/Unity/projects/psx/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+      <HintPath>B:/Github/Unity/projects/psxgame/psx/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>B:/Github/Unity/projects/psx/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+      <HintPath>B:/Github/Unity/projects/psxgame/psx/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
-      <HintPath>B:/Github/Unity/projects/psx/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+      <HintPath>B:/Github/Unity/projects/psxgame/psx/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-      <HintPath>B:/Github/Unity/projects/psx/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+      <HintPath>B:/Github/Unity/projects/psxgame/psx/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>B:/Github/Unity/projects/psx/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>B:/Github/Unity/projects/psxgame/psx/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>B:/Github/Unity/projects/psx/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>B:/Github/Unity/projects/psxgame/psx/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

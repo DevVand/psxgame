@@ -4,23 +4,23 @@ using UnityEngine;
 
 public class Clean : MonoBehaviour
 {
-    [HideInInspector]
-    public FillBucket bucket;
+    public Bucket bucket;
     public GameObject parent;
     public UseDelegator usescript;
-
+    
     void Start()
     {
-        bucket = GetComponent<FillBucket>();
         usescript = GetComponent<UseDelegator>();
         usescript.use = CleanDirty;
     }
 
     public void CleanDirty()
-    {   
-
-        Debug.Log("Chegou");
-        bucket.NoWater();
-        Destroy(gameObject);
+    {
+        if(bucket.isFull)
+        {
+            bucket.UnputWater();
+            Destroy(gameObject);
+            bucket.isFull = false;
+        }
     }
  }

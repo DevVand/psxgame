@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Switch : MonoBehaviour
 {
-    [SerializeField] Light lamp;
+    [SerializeField] Light[] lamps;
     [SerializeField] float onintensity;
     [SerializeField] float offintensity;
     [SerializeField] AudioSource switchsound;
@@ -18,15 +18,19 @@ public class Switch : MonoBehaviour
     }
 
     public void turnonoff() {
-        if (lamp.intensity == onintensity)
+        foreach ( Light lamp in lamps)
         {
-            lamp.intensity = offintensity;
-            switchsound.Play();
+            if (lamp.intensity == onintensity)
+            {
+                lamp.intensity = offintensity;
+                switchsound.Play();
+            }
+            else
+            {
+                lamp.intensity = onintensity;
+                switchsound.Play();
+            }
         }
-        else
-        {
-            lamp.intensity = onintensity;
-            switchsound.Play();
-        }
+       
     }
 }

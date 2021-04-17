@@ -51,4 +51,9 @@ public class EnemyMovement : MonoBehaviour
         agent.SetDestination(target.position);
         reached = false;
     }
+    public void newDestination(Vector3 position)
+    {
+        agent.SetDestination(position);
+        reached = false;
+    }
 }

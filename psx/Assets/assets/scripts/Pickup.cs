@@ -4,8 +4,8 @@ using System.Collections;
 public class Pickup : MonoBehaviour
 {
 	GameObject mainCamera;
-	bool[] carrying = {false, false};
-	GameObject[] carriedObject = { null, null};
+	public bool[] carrying = {false, false};
+	public GameObject[] carriedObject = { null, null};
 	Rigidbody[] carriedrigidbody = { null, null };
 
 	public Transform[] objectholder;

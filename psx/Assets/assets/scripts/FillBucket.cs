@@ -6,31 +6,32 @@ public class FillBucket : MonoBehaviour
 {
     public GameObject parent;
     public UseDelegator usescript;
-    public bool visible = false;
-    public bool isFull = false;
+    public Bucket bucket;
+    public Pickup pickup;
 
     void Start()
     {
         usescript = GetComponent<UseDelegator>();
-        if (!visible && !isFull)
-        {
-            usescript.use = Water;
-        } else
-        {
-            usescript.use = NoWater;
-        }
+        usescript.use = Water;
     }
 
     public void Water()
     {
-        Debug.Log("Disney?");
-        parent.transform.GetChild(0).gameObject.SetActive(true);
-        isFull = true;
+        for (int i = 0; i <= 1; i++)
+        {
+            if (pickup.carrying[i] && pickup.carriedObject[i].GetComponent<Bucket>() != null)
+            {
+                if (!bucket.isFull)
+                    bucket.PutWater();
+            }
+        }
     }
 
     public void NoWater()
     {
-        parent.transform.GetChild(0).gameObject.SetActive(false);
-        isFull = false;
+        if (bucket.isFull)
+        {
+            bucket.UnputWater();
+        }
     }
  }
