@@ -71,7 +71,7 @@ public class Pickup : MonoBehaviour
 		carrying[hand] = false;
 		carriedrigidbody[hand].constraints = RigidbodyConstraints.None;
 		carriedrigidbody[hand].velocity = carriedObject[hand].transform.forward * throwstrength;
-		float random = Random.Range(-10, 10);
+		float random = Random.Range(-4, 4);
 		carriedrigidbody[hand].angularVelocity = new Vector3(random, random, random);
 		
 		carriedObject[hand] = null;
