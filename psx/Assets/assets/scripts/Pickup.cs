@@ -9,6 +9,8 @@ public class Pickup : MonoBehaviour
 	Rigidbody[] carriedrigidbody = { null, null };
 
 	public Transform[] objectholder;
+	public LayerMask layer;
+	public bool interactive = true;
 
 	public float distance;
 	public float smooth;
@@ -19,36 +21,46 @@ public class Pickup : MonoBehaviour
 		mainCamera = GameObject.FindWithTag("MainCamera");
 	}
 
-	// Update is called once per frame
-	void Update()
-	{
+    private void Update()
+    {
 
+		for (int i = 0; i < carrying.Length; i++)
+		{
+			if (carrying[i])
+			{
+				//if (Input.GetButton("Fire"+hand))
+				if (Input.GetButtonDown("Fire" + (i+1)) && interactive)
+					drop(i);
+			}
+			else
+			{
+				if(pick(i))
+					break;
+			}
+		}
+	}
+    private void FixedUpdate()
+    {
 		for (int i = 0; i < carrying.Length; i++)
 		{
 			if (carrying[i])
 			{
 				carriedObject[i].transform.position = Vector3.Lerp(carriedObject[i].transform.position, objectholder[i].position, Time.deltaTime * smooth);
 				carriedObject[i].transform.rotation = Quaternion.Lerp(carriedObject[i].transform.rotation, objectholder[i].rotation, Time.deltaTime * smooth);
-
-				if (Input.GetMouseButtonDown(i))
-					drop(i);
-			}
-			else
-			{
-				pick(i);
 			}
 		}
 	}
-
-	void pick(int hand)
+	bool pick(int hand)
 	{
-		if (Input.GetMouseButtonDown(hand))
-		{
+		//if (Input.GetMouseButtonDown(hand))
+		if (Input.GetButtonDown("Fire"+(hand+1)) && interactive)
+			{
 			int x = Screen.width / 2;
 			int y = Screen.height / 2;
 			Ray ray = Camera.main.ScreenPointToRay(new Vector3(x, y));
 			RaycastHit hit;
-			if (Physics.Raycast(ray, out hit))
+			
+			if (Physics.Raycast(ray, out hit,layer))
 			{
 				if (hit.distance < distance)
 				{
@@ -64,9 +76,11 @@ public class Pickup : MonoBehaviour
 					}
 				}
 			}
+			return true;
 		}
+		return false;
 	}
-	void drop(int hand)
+	public void drop(int hand)
 	{
 		carrying[hand] = false;
 		carriedrigidbody[hand].constraints = RigidbodyConstraints.None;
@@ -74,6 +88,11 @@ public class Pickup : MonoBehaviour
 		float random = Random.Range(-4, 4);
 		carriedrigidbody[hand].angularVelocity = new Vector3(random, random, random);
 		
+		carriedObject[hand] = null;
+	}
+	public void letGo(int hand)
+	{
+		carrying[hand] = false;
 		carriedObject[hand] = null;
 	}
 }

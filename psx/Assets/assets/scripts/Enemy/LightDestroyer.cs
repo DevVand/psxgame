@@ -5,13 +5,14 @@ using UnityEngine;
 public class LightDestroyer : MonoBehaviour
 {
     [SerializeField] Switch my_switch;
-
     private void OnTriggerEnter(Collider other)
     {
-        EnemyMovement enemy= other.gameObject.GetComponent<EnemyMovement>();
-        if (enemy != null) {
-            if (my_switch.isOn() && enemy.hunting)
+        if (other.gameObject.tag == "Enemy")
+        {
+            if (my_switch.isOn() && other.gameObject.GetComponent<EnemyMovement>().hunting)
+            {
                 my_switch.ForceOff();
+            }
         }
     }
 }

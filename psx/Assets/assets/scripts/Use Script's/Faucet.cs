@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class Faucet : MonoBehaviour
 {
-    public Pickup pickup;
+    private Pickup pickup;
     public UseDelegator usescript;
 
+    [SerializeField] AudioClip audio;
+    AudioSource audioSource;
     private void Start()
     {
+        pickup = GameObject.FindGameObjectWithTag("Player").GetComponent<Pickup>();
+        audioSource = GetComponent<AudioSource>();
         usescript = GetComponent<UseDelegator>();
 
         usescript.use = EncherComAgua;
@@ -20,6 +24,7 @@ public class Faucet : MonoBehaviour
         {
             if (pickup.carrying[i] && pickup.carriedObject[i].GetComponent<Bucket>() != null)
             {
+                audioSource.PlayOneShot(audio, 1);
                 pickup.carriedObject[i].GetComponent<Bucket>().EncheBalde();
             }
         }

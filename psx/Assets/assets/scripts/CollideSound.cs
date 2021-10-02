@@ -5,7 +5,6 @@ using UnityEngine;
 public class CollideSound : MonoBehaviour
 {
     [SerializeField] AudioClip[] impact;
-    [SerializeField] AudioClip[] stay;
 
     [SerializeField] float enterSensibility = .8f;
     [SerializeField] float staySensibility = 3;
@@ -31,10 +30,10 @@ public class CollideSound : MonoBehaviour
             playAudio(collision);
         }
     }
-    private void playAudio(Collision collision) {
-        audioSource.clip = stay[Random.RandomRange(0, stay.Length)];
-        audioSource.pitch = Random.RandomRange(.65f, .88f);
-        audioSource.volume = collision.relativeVelocity.magnitude / 3;
-        audioSource.Play();
+
+    private void playAudio(Collision collision)
+    {
+        audioSource.pitch = Random.Range(.65f, .88f);
+        audioSource.PlayOneShot(impact[Random.Range(0, impact.Length)], collision.relativeVelocity.magnitude / 3);
     }
 }

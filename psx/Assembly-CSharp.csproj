@@ -73,35 +73,81 @@
     <Compile Include="Assets\addons\URP-PSX-master\URP-PSX\Assets\Scripts\Pixelation\Pixelation.cs" />
     <Compile Include="Assets\addons\URP-PSX-master\URP-PSX\Assets\Scripts\Pixelation\PixelationController.cs" />
     <Compile Include="Assets\addons\URP-PSX-master\URP-PSX\Assets\Scripts\Pixelation\PixelationRenderFeature.cs" />
-    <Compile Include="Assets\addons\unity\Scripts\SimpleCameraController.cs" />
+    <Compile Include="Assets\addons\unity\Materials\Scripts\SimpleCameraController.cs" />
     <Compile Include="Assets\addons\unity\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\assets\Options.cs" />
+    <Compile Include="Assets\assets\scripts\CheckDoor.cs" />
     <Compile Include="Assets\assets\scripts\CollideSound.cs" />
+    <Compile Include="Assets\assets\scripts\CollideVeio.cs" />
     <Compile Include="Assets\assets\scripts\Enemy\EnemyMovement.cs" />
     <Compile Include="Assets\assets\scripts\Enemy\FieldOfView.cs" />
-    <Compile Include="Assets\assets\scripts\Enemy\FieldOfViewEditor.cs" />
     <Compile Include="Assets\assets\scripts\Enemy\LightDestroyer.cs" />
+    <Compile Include="Assets\assets\scripts\Enemy\VeioMusic.cs" />
+    <Compile Include="Assets\assets\scripts\Enemy\VeioTrigger.cs" />
+    <Compile Include="Assets\assets\scripts\Enemy\triggerCaller.cs" />
+    <Compile Include="Assets\assets\scripts\Fart.cs" />
+    <Compile Include="Assets\assets\scripts\Lamp.cs" />
+    <Compile Include="Assets\assets\scripts\Menu\Back.cs" />
+    <Compile Include="Assets\assets\scripts\Menu\Menu.cs" />
+    <Compile Include="Assets\assets\scripts\Menu\MenuManager.cs" />
+    <Compile Include="Assets\assets\scripts\Menu\Pause.cs" />
+    <Compile Include="Assets\assets\scripts\Menu\Quit.cs" />
+    <Compile Include="Assets\assets\scripts\Menu\Skip.cs" />
+    <Compile Include="Assets\assets\scripts\OptionsManager.cs" />
     <Compile Include="Assets\assets\scripts\Pickable.cs" />
     <Compile Include="Assets\assets\scripts\Pickup.cs" />
     <Compile Include="Assets\assets\scripts\Player\PlayerCamera.cs" />
     <Compile Include="Assets\assets\scripts\Player\PlayerMovement.cs" />
+    <Compile Include="Assets\assets\scripts\ResetDistance.cs" />
+    <Compile Include="Assets\assets\scripts\SoundLeveler.cs" />
     <Compile Include="Assets\assets\scripts\Stepsound.cs" />
     <Compile Include="Assets\assets\scripts\TriggerDoor.cs" />
+    <Compile Include="Assets\assets\scripts\Use Script's\Book.cs" />
     <Compile Include="Assets\assets\scripts\Use Script's\Broom.cs" />
     <Compile Include="Assets\assets\scripts\Use Script's\Bucket.cs" />
     <Compile Include="Assets\assets\scripts\Use Script's\Dirty.cs" />
     <Compile Include="Assets\assets\scripts\Use Script's\DoorController.cs" />
     <Compile Include="Assets\assets\scripts\Use Script's\Faucet.cs" />
     <Compile Include="Assets\assets\scripts\Use Script's\PlayPiano.cs" />
+    <Compile Include="Assets\assets\scripts\Use Script's\Shelf.cs" />
     <Compile Include="Assets\assets\scripts\Use Script's\Switch.cs" />
+    <Compile Include="Assets\assets\scripts\Use Script's\Toilet.cs" />
     <Compile Include="Assets\assets\scripts\Use Script's\Use.cs" />
     <Compile Include="Assets\assets\scripts\Use Script's\UseDelegator.cs" />
+    <Compile Include="Assets\assets\scripts\VeiaDialogue.cs" />
+    <Compile Include="Assets\assets\scripts\tutorial\isInside.cs" />
+    <Compile Include="Assets\assets\scripts\tutorial\tutorial0.cs" />
+    <Compile Include="Assets\assets\scripts\tutorial\tutorial1.cs" />
+    <Compile Include="Assets\imageFadeOut.cs" />
+    <Compile Include="Assets\musicFadeIn.cs" />
+    <None Include="Assets\addons\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\addons\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\addons\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\addons\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\addons\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+    <None Include="Assets\addons\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+    <None Include="Assets\addons\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+    <None Include="Assets\addons\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\addons\TextMesh Pro\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\addons\URP-PSX-master\URP-PSX\Assets\Shaders\Fog.shader" />
+    <None Include="Assets\addons\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\addons\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
+    <None Include="Assets\addons\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\addons\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\addons\URP-PSX-master\URP-PSX\Assets\Shaders\cginc\voronoi.cginc" />
+    <None Include="Assets\addons\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\addons\URP-PSX-master\URP-PSX\Assets\Shaders\Dithering.shader" />
     <None Include="Assets\addons\URP-PSX-master\URP-PSX\Assets\Shaders\Pixelation.shader" />
     <None Include="Assets\addons\URP-PSX-master\URP-PSX\Assets\Shaders\cginc\DitheringPatterns.cginc" />
+    <None Include="Assets\addons\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\addons\URP-PSX-master\URP-PSX\ProjectSettings\ProjectVersion.txt" />
+    <None Include="Assets\addons\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\addons\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\addons\URP-PSX-master\URP-PSX\Assets\Shaders\HLSL\CustomLighting.hlsl" />
+    <None Include="Assets\addons\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\addons\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\addons\TextMesh Pro\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\addons\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <Reference Include="UnityEngine">
       <HintPath>A:/Unity/2019.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -684,6 +730,9 @@
     <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
       <HintPath>B:/Github/Unity/projects/psxgame/psx/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>B:/Github/Unity/projects/psxgame/psx/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Postprocessing.Runtime">
       <HintPath>B:/Github/Unity/projects/psxgame/psx/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
@@ -700,7 +749,36 @@
       <HintPath>B:/Github/Unity/projects/psxgame/psx/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
-  <ItemGroup></ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Fungus.FungusLuaEditor.csproj">
+      <Project>{B8171FB4-15E4-4DCA-4CC4-9455D035A876}</Project>
+      <Name>Fungus.FungusLuaEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="FungusEditor.csproj">
+      <Project>{E7868508-2733-F8AB-DD5C-25DB25DE1F58}</Project>
+      <Name>FungusEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Fungus.LineEndingsEditor.csproj">
+      <Project>{7C4E9E7B-FECC-0926-F394-C87EEDBEA04A}</Project>
+      <Name>Fungus.LineEndingsEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="FungusExamples.csproj">
+      <Project>{EBC71F05-2C7D-C556-0504-047038C60588}</Project>
+      <Name>FungusExamples</Name>
+    </ProjectReference>
+    <ProjectReference Include="Fungus.csproj">
+      <Project>{13F9B2E4-BCF6-D386-A356-7E1552B1EDBF}</Project>
+      <Name>Fungus</Name>
+    </ProjectReference>
+    <ProjectReference Include="Fungus.UsfxrEditor.csproj">
+      <Project>{91FEE4C8-D4D0-E8AC-E75C-C82DB5415148}</Project>
+      <Name>Fungus.UsfxrEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Fungus.FungusLuaJSONCheckerEditor.csproj">
+      <Project>{90C950AC-2ADA-0147-062B-0D7C9F379463}</Project>
+      <Name>Fungus.FungusLuaJSONCheckerEditor</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -7,6 +7,7 @@ TagManager:
   - Pickable
   - Interactive
   - Enemy
+  - Menu
   layers:
   - Default
   - TransparentFX
@@ -23,7 +24,7 @@ TagManager:
   - door
   - enemy
   - obstacles
-  - 
+  - vlights
   - 
   - 
   - 

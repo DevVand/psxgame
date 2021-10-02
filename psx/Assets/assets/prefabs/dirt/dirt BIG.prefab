@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 7867784884417490864}
   - component: {fileID: 7867784884417490867}
   - component: {fileID: 7867784884417490866}
-  - component: {fileID: 7867784884417490870}
   - component: {fileID: 7867784884417490877}
+  - component: {fileID: 7867784884417490870}
   m_Layer: 10
   m_Name: dirt BIG
   m_TagString: Interactive
@@ -96,18 +96,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -1618973573479111843, guid: e83947b45a1490d4783d530aea50917f, type: 3}
---- !u!114 &7867784884417490870
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7867784884417490876}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9372425ca651f34885578b4f2cc2aa8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &7867784884417490877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -122,5 +110,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stage: 3
   prefab: {fileID: 2583149125694964695, guid: a849d07c5a6d58d4ca9ddbf0456574a8, type: 3}
-  pickup: {fileID: 0}
   usescript: {fileID: 0}
+--- !u!114 &7867784884417490870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7867784884417490876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9372425ca651f34885578b4f2cc2aa8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

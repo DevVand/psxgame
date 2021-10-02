@@ -4,13 +4,21 @@ using UnityEngine;
 
 public class Bucket : MonoBehaviour
 {
-    public Pickup pickup;
     public GameObject parentBalde;
-    public UseDelegator usescript;
     public bool isFull = false;
 
+    [SerializeField] AudioClip[] sound;
+    AudioSource audioSource;
+
+    private Menu menu;
+    private Pickup pickup;
+    public UseDelegator usescript;
     private void Start()
     {
+        menu = GameObject.FindGameObjectWithTag("Menu").GetComponent<Menu>();
+        pickup = GameObject.FindGameObjectWithTag("Player").GetComponent<Pickup>();
+        audioSource = GetComponent<AudioSource>();
+
         usescript = GetComponent<UseDelegator>();
         usescript.use = LimpaVassoura;
     }
@@ -29,13 +37,28 @@ public class Bucket : MonoBehaviour
 
     public void LimpaVassoura()
     {
-        for (int i = 0; i <= 1; i++)
-        {
-            if (pickup.carrying[i] && pickup.carriedObject[i].GetComponent<Broom>() != null)
+        
+            for (int i = 0; i <= 1; i++)
             {
-                EsvaziaBalde();
-                pickup.carriedObject[i].GetComponent<Broom>().LimpaVassoura();
+                if (pickup.carrying[i] && pickup.carriedObject[i].GetComponent<Broom>() != null)
+                {
+                if (isFull)
+                {
+                    playAudio();
+                    EsvaziaBalde();
+                    pickup.carriedObject[i].GetComponent<Broom>().LimpaVassoura();
+                }else{
+                    menu.message("emptyBucket");
+                }
             }
-        }
+        } 
+
     }
+    public void playAudio()
+    {
+        audioSource.clip = sound[Random.Range(0, sound.Length)];
+        audioSource.pitch = Random.Range(.7f, .88f);
+        audioSource.Play();
+    }
+
 }
